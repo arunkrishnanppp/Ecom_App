@@ -170,7 +170,7 @@ console.log(orders);
                           <td>{order._id}</td>
                               <td>{order.createdAt.substring(1, 10)}</td>
                               <td>{order.totalPrice}</td>
-                              <td>{order.isPaid?order.paidAt.substring(1, 10):(
+                              <td>{order.isPaid?order.paymentResult.update_time.substring(1, 10):(
                                   <i className='fas fa-times' style={{color:'red',padding:'10px'}}></i>
                               )}</td>
                               <td>{order.isDelivered?order.deliveredAt.substring(0,10):(
