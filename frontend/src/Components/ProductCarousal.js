@@ -34,7 +34,9 @@ useEffect(()=>{
 
 
 <Image  src={prod.image} alt={prod.name} fluid></Image>
-<Carousel.Caption className='carousal-caption'>
+<Carousel.Caption className='carousal-caption pt-mt-10' 
+
+>
     {prod.name} ({prod.price})
 </Carousel.Caption>
 
