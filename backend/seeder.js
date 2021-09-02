@@ -15,10 +15,10 @@ ConnectDB()
 const importDate=async()=>{
     console.log("IN Import")
     try {
-    //    await Order.deleteMany()
+       await Order.deleteMany()
     //    await Product.deleteMany()
        await User.deleteMany()
-    //    console.log(users)
+       console.log(users)
 
        const savedUsers=await User.insertMany(users)
 
